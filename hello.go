@@ -12,8 +12,8 @@ import (
 	"log"
 	"syscall"
 
-	"github.com/hanwen/go-fuse/fs"
-	"github.com/hanwen/go-fuse/fuse"
+	fs "github.com/hanwen/go-fuse/fs"
+	fuse "github.com/hanwen/go-fuse/fuse"
 )
 
 type HelloRoot struct {
