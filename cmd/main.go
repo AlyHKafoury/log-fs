@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/AlyHKafoury/log-fs/filesystem"
+	"github.com/AlyHKafoury/log-fs/wsclient"
 	"github.com/hanwen/go-fuse/fs"
 	"github.com/hanwen/go-fuse/fuse"
 	"log"
@@ -10,6 +11,7 @@ import (
 )
 
 func main() {
+    wsclient.Connect()
     var uid, gid string
     user, err := user.Current()
     if err != nil {
